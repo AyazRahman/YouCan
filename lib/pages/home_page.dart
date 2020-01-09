@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       BorderRadius.only(topLeft: Radius.circular(75.0)),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.only(top: 40.0, left: 40.0),
+                  padding: EdgeInsets.only(top: 40.0, left: 40.0, right: 40),
                   child: ListView(
                     children: Data.foodList
                         .map((item) => foodItem(item, context))

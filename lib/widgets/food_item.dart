@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:you_can/model/food.dart';
+import 'package:you_can/pages/detail_page.dart';
 
 const titleStyle = TextStyle(
     fontFamily: 'Montserrat', fontSize: 17.0, fontWeight: FontWeight.bold);
@@ -10,8 +11,8 @@ const subtitleStyle =
 Widget foodItem(Food item, BuildContext context) {
   return InkWell(
     onTap: () {
-      //TODO: Add Detail Page Link when completed
-      Navigator.of(context).push(MaterialPageRoute(builder: (context) => null));
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (context) => DetailPage(item)));
     },
     child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
