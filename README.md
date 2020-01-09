@@ -1,5 +1,9 @@
 # you_can
 
+A flutter UI for a healthy food app
+
+![](AppVideo.gif)
+
 A new Flutter application.
 
 ## Getting Started
